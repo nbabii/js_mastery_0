@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+/* header */
+header {
+  background-color: rgba(0, 0, 0, 0.744); 
+  color: white; 
+  padding: 10px 20px; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 1000;
+  height: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  display: flex; 
+  align-items: center;
+  justify-content: flex-start; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li {
+  margin-right: 1px; 
+}
+
+a {
+  text-decoration: none; 
+  color: rgb(248, 245, 245); 
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-size: 16px; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+  display: inline-block; 
+  padding: 8px 16px; 
+  transition: background-color 0.3s ease; 
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+ 
+}
+
+/* home page */
+.home-page {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url('./assets/pizza.png'); 
+
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  position: relative;
   color: white;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #fb61f1;
+.content-center {
+  text-align: center;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-center h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin: 0; 
+  padding: 0; 
+  line-height: 2; 
 }
+
+.content-center button {
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgba(11, 11, 11, 0.8);
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+.content-center button:hover {
+  background-color: white;
+  color: black;
+}
+
+.open-hours {
+  position: absolute;
+  font-weight: 300;
+  bottom: 20px;
+  left: 20px;
+  font-size: 1rem;
+  background-color: rgba(11, 11, 11, 0.8);
+  padding: 0.1rem 0.8rem;
+  border-radius: 4px;
+}
+  .open-hours h3 {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 300;
+  }
