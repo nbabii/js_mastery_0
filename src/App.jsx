@@ -7,18 +7,28 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import './App.css';
 
-const App = () => {
+function App() {
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
+        <Route
+          path="/" element={
+            <div>
+              <section id="home" className="section home">
+                <Home />
+              </section>
+              <section id="menu" className="section menu">
+                <Menu />
+              </section>
+            </div>
+          
+        />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;
