@@ -22,7 +22,7 @@ function App() {
                 <Menu />
               </section>
             </div>
-          
+          }
         />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
