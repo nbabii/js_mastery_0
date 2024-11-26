@@ -12,18 +12,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route
-          path="/" element={
-            <div>
-              <section id="home" className="section home">
-                <Home />
-              </section>
-              <section id="menu" className="section menu">
-                <Menu />
-              </section>
-            </div>
-          }
-        />
+        <Route  path="/" element={  <Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

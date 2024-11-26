@@ -28,11 +28,11 @@ body {
  
 }
 
-nav {
+.nav {
   width: 100%;
 }
 
-ul {
+.nav-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -41,11 +41,11 @@ ul {
   gap: 20px; 
 }
 
-li {
+.nav-item {
   margin: 0;
 }
 
-a {
+.nav-link {
   text-decoration: none;
   color: rgb(248, 245, 245);
   font-family: "Edu AU VIC WA NT Hand", cursive;
@@ -57,7 +57,7 @@ a {
   transition: background-color 0.3s ease;
 }
 
-a:hover {
+.nav-link:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
 }
@@ -68,20 +68,21 @@ a:hover {
     padding: 10px 15px; 
   }
 
-  ul {
-    gap: 15px; 
-  }
-
-  a {
+  .nav-link {
     font-size: 14px; 
     padding: 6px 12px;
   }
 
-  .header nav ul {
+  .nav {
     flex-direction: column;
     align-items: center;
   }
-
+  
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+  }
 }
 
 @media (max-width: 480px) {
@@ -90,13 +91,13 @@ a:hover {
     padding: 10px; 
   }
 
-  ul {
+  .nav-list {
     flex-wrap: wrap; 
     justify-content: flex-start;
     gap: 10px;
   }
 
-  a {
+  .nav-link {
     font-size: 12px; 
     padding: 5px 10px;
   }
