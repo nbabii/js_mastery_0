@@ -5,12 +5,12 @@ import '../App.css';
 const Header = () => {
   return (
     <header className='header'>
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/menu">Menu</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+    <nav className='nav'>
+      <ul className='nav-list'> 
+        <li className='nav-item'><a href="#home" className='nav-link'>Home</a></li>
+        <li className='nav-item'> <a href="#menu" className='nav-link'>Menu</a></li>
+        <li className='nav-item'><Link to="/about" className='nav-link'>About</Link></li>
+        <li className='nav-item'><Link to="/contact" className='nav-link'>Contact</Link></li>
       </ul>
     </nav>
     </header>

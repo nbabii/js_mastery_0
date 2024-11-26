@@ -1,0 +1,79 @@
+/* Home Page */
+.home-page {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./assets/pizza.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+  }
+  
+  .content-center {
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+  }
+  
+  .content-center-title {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    line-height: 1;
+  }
+  
+  .content-center button {
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(11, 11, 11, 0.8);
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+  }
+  
+  .content-center button:hover {
+    background-color: rgb(161, 16, 16);
+    color: black;
+  }
+  
+  /* Open Hours */
+  .open-hours {
+    position: absolute;
+    font-weight: 300;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1rem;
+    background-color: rgba(11, 11, 11, 0.8);
+    padding: 0.1rem 0.8rem;
+    border-radius: 4px;
+  }
+  
+  .open-hours-title {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 300;
+  }
+
+  .menu-button-link {
+    text-decoration: none;
+    color: rgb(248, 245, 245);
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-button-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }

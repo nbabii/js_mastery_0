@@ -1,117 +1,106 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
 
-/* header */
-header {
-  background-color: rgba(0, 0, 0, 0.744); 
-  color: white; 
-  padding: 10px 20px; 
-  position: fixed; 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000000;
+}
+
+.app {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+  background-color: rgba(0, 0, 0, 0.744);
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;
   z-index: 1000;
-  height: 40px;
-}
-
-nav {
-  display: flex; 
-  align-items: center;
-  justify-content: flex-start; 
-}
-
-ul {
-  list-style: none; 
-  padding: 0;
-  margin: 0;
-  display: flex; 
-}
-
-li {
-  margin-right: 1px; 
-}
-
-a {
-  text-decoration: none; 
-  color: rgb(248, 245, 245); 
-  font-family: "Edu AU VIC WA NT Hand", cursive;
-  font-size: 16px; 
-  text-transform: uppercase; 
-  letter-spacing: 1px; 
-  display: inline-block; 
-  padding: 8px 16px; 
-  transition: background-color 0.3s ease; 
-}
-
-a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center; 
  
 }
 
-/* home page */
-.home-page {
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-image: url('./assets/pizza.png'); 
+.nav {
+  width: 100%;
+}
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  color: white;
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: flex-start; 
+  gap: 20px; 
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(248, 245, 245);
   font-family: "Edu AU VIC WA NT Hand", cursive;
-  justify-content: center;
-  align-items: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
 }
 
-.content-center {
-  text-align: center;
-  font-family: "Edu AU VIC WA NT Hand", cursive;
-  justify-content: center;
-  align-items: center;
-}
-
-.content-center h1 {
-  font-size: 4rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  margin: 0; 
-  padding: 0; 
-  line-height: 2; 
-}
-
-.content-center button {
-  margin-top: 3rem;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  color: white;
-  background-color: rgba(11, 11, 11, 0.8);
-  border: 1px solid white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  font-family: "Edu AU VIC WA NT Hand", cursive;
-}
-
-.content-center button:hover {
-  background-color: white;
-  color: black;
-}
-
-.open-hours {
-  position: absolute;
-  font-weight: 300;
-  bottom: 20px;
-  left: 20px;
-  font-size: 1rem;
-  background-color: rgba(11, 11, 11, 0.8);
-  padding: 0.1rem 0.8rem;
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
 }
-  .open-hours h3 {
-    font-family: "Edu AU VIC WA NT Hand", cursive;
-    font-weight: 300;
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 15px; 
   }
+
+  .nav-link {
+    font-size: 14px; 
+    padding: 6px 12px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .header {
+    padding: 10px; 
+  }
+
+  .nav-list {
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .nav-link {
+    font-size: 12px; 
+    padding: 5px 10px;
+  }
+}
+
+

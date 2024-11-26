@@ -7,18 +7,17 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import './App.css';
 
-const App = () => {
+function App() {
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
+        <Route  path="/" element={  <Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;
