@@ -1,0 +1,167 @@
+.about-page {
+    background-color: #9f5555; 
+    color: #ffffff; 
+    padding: 40px 60px;
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    text-transform: uppercase;
+
+  }
+  
+.about-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #f8f8f8;
+    margin-top: 50px;
+    font-weight: 300;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    text-transform: uppercase;
+  }
+
+.about-description,
+.about-chef {
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.chef-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-chef {
+  margin-right: 20px;
+  font-size: 1.2em;
+}
+
+.about-pride {
+font-size: 1.2em;
+line-height: 1.5;
+text-align: left;
+}
+
+.about-small-image {
+  width: 300px;
+  height: 200px;
+  border-radius: 80%; 
+  
+}
+
+.interior-image {
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+}
+
+
+.opening-hours-title {
+  font-size: 1.5em;
+  margin-top: 40px;
+  font-weight: bold;
+  text-align: left;
+  font-weight: 600;
+}
+
+
+.opening-hours {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  
+}
+
+.opening-hours-section {
+  text-align: left;
+  flex: 1;
+}
+
+.opening-hours-day {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+
+@media (max-width: 768px) {
+  .chef-section {
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+
+  .about-chef {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .opening-hours {
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+
+  .opening-hours-section {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+   
+    .about-title {
+      font-size: 1.8em; 
+      margin-bottom: 15px;
+    }
+  
+    .about-description {
+      font-size: 0.8em; 
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
+  
+    .chef-section {
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center; 
+    }
+  
+    .chef-section-text {
+      margin-bottom: 10px; 
+    }
+  
+    .about-chef,
+    .about-pride {
+      font-size: 0.9em; 
+    }
+  
+    .about-small-image {
+      width: 80px; 
+      height: 80px;
+      border-radius: 50%; 
+    }
+  
+    .full-width-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .opening-hours-title {
+      font-size: 1.5em; 
+      margin-bottom: 10px;
+      text-align: center; 
+    }
+  
+    .opening-hours {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .opening-hours-section {
+      margin-bottom: 15px; 
+      text-align: center; 
+    }
+  
+    .opening-hours-day {
+      font-size: 0.8em; 
+    }
+  }
