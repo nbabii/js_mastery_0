@@ -1,6 +1,6 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import Menu from './Menu';
+import About from './About';
 import "../App.css"; 
 import "../Home.css";
 
@@ -25,6 +25,11 @@ const Home = () => {
       <section id="menu" className="section menu">
         <Menu />
       </section>
+      <section id="about" className="section about">
+    <About />
+  </section>
+
+
   </div>
   );
 };
