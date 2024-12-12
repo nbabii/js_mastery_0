@@ -14,11 +14,18 @@ const Contact = () => {
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
 
+  const minDate = new Date();
+  const maxDate = new Date(new Date().setMonth(new Date().getMonth() + 1));
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
+  };
+
+  const handleDateChange = (date) => {
+    setSelectedDateTime(date);
   };
 
   const validate = () => {
@@ -109,15 +116,15 @@ const Contact = () => {
         
         <DatePicker
           selected={selectedDateTime}
-          onChange={(date) => setSelectedDateTime(date)}
+          onChange={handleDateChange}
           showTimeSelect
           dateFormat="Pp"
           filterTime={(time) => {
             const hours = time.getHours();
             return hours >= 10 && hours < 24;
           }}
-          minDate={new Date()}
-          maxDate={new Date(new Date().setMonth(new Date().getMonth() + 1))}
+          minDate={minDate}
+          maxDate={maxDate}
           placeholderText="Select date and time"
           className={`form-input ${errors.date ? "error-border" : ""}`}
         />
@@ -131,7 +138,7 @@ const Contact = () => {
           onChange={handleChange}
           maxLength={250}
         />
-        {errors.message && <p className="error-text">{errors.message}</p>}
+        {errors.message && <p className="error-text">{errors?.message}</p>}
         
         <button type="submit" className="form-button">
           Send Message
