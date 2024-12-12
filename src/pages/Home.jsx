@@ -1,6 +1,7 @@
 import React from "react";
 import Menu from './Menu';
 import About from './About';
+import Contact from './Contact';
 import "../App.css"; 
 import "../Home.css";
 
@@ -28,7 +29,9 @@ const Home = () => {
       <section id="about" className="section about">
     <About />
   </section>
-
+  <section id="contact" className="section contact">
+    <Contact />
+  </section>
 
   </div>
   );

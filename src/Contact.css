@@ -1,0 +1,196 @@
+.contact-page {
+  background-color: #8b9196;
+  color: #ffffff;
+  padding: 40px 60px;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #f8f8f8;
+  margin-top: 50px;
+  font-weight: 300;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  text-transform: uppercase;
+}
+
+.contact-description,
+.contact-note {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.contact-note strong {
+  font-weight: bold; 
+  color: #ffffff; 
+  background-color: #000000; 
+  padding: 5px 10px; 
+  display: inline-block; 
+}
+
+.form-heading {
+  margin-bottom: 30px; 
+  font-size: 1.5em; 
+  font-weight: 500; 
+  text-align: left;
+  color: #ffffff; 
+}
+
+.contact-form {
+  max-width: 800px;
+  text-align: left;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-button,
+.form-input {
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  margin-bottom: 20px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #ffffff00; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  outline: none;
+  transition: border-color 0.3s ease;
+  text-align: left;
+  box-sizing: border-box; 
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #6b808e; 
+}
+
+.form-textarea {
+  height: 50px; 
+  resize: none; 
+}
+
+.form-button {
+  padding: 15px;
+  background-color: #bbccd7; 
+  color: #131212; 
+  border: none;
+  font-size: 1em; 
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  text-transform: uppercase;
+  text-align: center; 
+  cursor: pointer;
+  text-transform: uppercase; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.form-button:hover {
+  background-color: #c4d3dc90; 
+  color: white;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  display: block;
+  background: #ffffff; 
+  margin-bottom: 20px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  text-transform: uppercase;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.9em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.error-border {
+  border: 2px solid red;
+}
+
+.react-datepicker {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.react-datepicker-wrapper {
+  width: 100%; 
+}
+
+.react-datepicker__input-container input {
+  width: 100%; 
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.react-datepicker__time-container {
+  border-left: 2px solid #ccc;
+}
+
+.react-datepicker__header {
+  background-color: #f4f4f4;
+}
+
+.react-datepicker__day--selected, .react-datepicker__time-list-item--selected {
+  background-color: #899189;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+
+  .contact-title {
+    font-size: 1.5rem; 
+  }
+
+  .form-heading {
+    font-size: 1.2em; 
+  }
+  .contact-description,
+  .contact-note {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .contact-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  .form-heading {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+  }
+
+  .form-button {
+    padding: 8px;
+    font-size: 0.7em;
+  }
+
+  .error-text {
+    font-size: 0.5em;
+  }
+  .contact-description,
+  .contact-note {
+    font-size: 0.9em;
+}
+}
